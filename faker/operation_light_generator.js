@@ -2,11 +2,11 @@
 var faker = require('faker');
 var fs = require('fs');
 var spacer = ";"
-var fileName = '100operations';
+var fileName = '100iban_operations';
 
 // Setup variables
 var numberOfOperations = 100;
-var numberOfOperationsOnExistingIban = 10000;
+var numberOfOperationsOnExistingIban = 80;
 
 var operationsFinal = [];
 var operationsStart = [];
@@ -28,6 +28,16 @@ function generateCsvWithFakeData(fileName) {
 
         operationsFinal.push(operation);
     }   
+
+    // add operations on existing iban
+    for (k = 0; k < numberOfOperationsOnExistingIban; k ++) {
+        var operation = {};
+        generateOperation(operation);
+        var index = Math.floor(Math.random() * operationsStart.length);
+        operation.iban = operationsStart[index].iban;
+
+        operationsFinal.push(operation);
+    }
 
     var keys = Object.keys(operationsFinal[0]);
     var operation_csv = jsonArrayToCsv(keys);
