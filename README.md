@@ -3,7 +3,7 @@
 ## Introduction
 Dans ce workshop nous allons mettre en place un système de stockage et de recherche de transactions bancaires. 
 
-## Exercice 1 - Introduction à Cassandra
+## Exercice 1 — Introduction à Cassandra
 [01.01 — Cqlsh](exercises/01.01.CQLSH.md)
 
 [01.02 — Jouons avec CQL](exercises/01.02.CQL_basis.md)
@@ -12,10 +12,11 @@ Dans ce workshop nous allons mettre en place un système de stockage et de reche
 
 [01.04 — Les clefs de regroupement](exercises/01.04.Clustering.md)
 
-## Exercice 2 - Introduction à DSE Search
+## Exercice 2 — Introduction à DSE Search
 [03.01 — Découverte de DSE Search](exercises/03.01.Search_introduction.md)
 
 [03.02 — Les Solr queries](exercises/03.02.Solr_queries.md)
+
 
 
 CREATE TABLE tp_bnp.operations_by_date (
