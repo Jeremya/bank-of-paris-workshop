@@ -15,8 +15,15 @@ Dans ce workshop nous allons mettre en place un système de stockage et de reche
 ## Exercice 2 — Introduction à DSE Search
 [03.01 — Découverte de DSE Search](exercises/03.01.Search_introduction.md)
 
-[03.02 — Les Solr queries](exercises/03.02.Solr_queries.md)
+[03.02 — Recherches sur des dates](exercises/03.02.Date_search.md)
 
+[03.03 — Recherches sur du texte](exercises/03.03.Date_search.md)
+
+## TODO
+
+* Exercise 1 add text, explain more.
+* Exercise 2 on data modelling?
+* Search exercise on words (fuzzy etc.)
 
 
 CREATE TABLE tp_bnp.operations_by_date (
