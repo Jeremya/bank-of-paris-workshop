@@ -17,7 +17,7 @@ Dans ce workshop nous allons mettre en place un système de stockage et de reche
 
 [03.02 — Recherches sur des dates](exercises/03.02.Date_search.md)
 
-[03.03 — Recherches sur du texte](exercises/03.03.Date_search.md)
+[03.03 — Recherches sur du texte](exercises/03.03.Text_Search.md)
 
 ## TODO
 
