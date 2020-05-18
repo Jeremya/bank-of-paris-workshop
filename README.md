@@ -17,7 +17,12 @@ Un Terminal apparaît en bas de votre fenêtre. Copiez-y cette ligne de commande
 git clone https://github.com/Jeremya/bank-of-paris-workshop
 ```
 
-Vous avez désormais un répertoire `bankl-of-paris-workshop` créée dans votre machine virtuelle.
+Vous avez désormais un répertoire `bank-of-paris-workshop` créé dans votre machine virtuelle.
+Placez-vous dans ce répertoire pour faire les exercices grâce à la commande :
+
+```shell script
+cd bank-of-paris-workshop
+```
 
 ## Exerçons-nous
 
@@ -26,7 +31,7 @@ Vous avez désormais un répertoire `bankl-of-paris-workshop` créée dans votre
 
 [01.02 — Jouons avec CQL](exercises/01.02.CQL_basis.md)
 
-[01.03 — Les partitions](exercises/01.03.Partitions.md)
+[01.03 — Il faut toujours une partition](exercises/01.03.Partitions.md)
 
 [01.04 — Les clefs de regroupement](exercises/01.04.Clustering.md)
 
