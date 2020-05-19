@@ -46,10 +46,4 @@ cd bank-of-paris-workshop
 
 [03.03 — Recherches sur du texte](exercises/03.03.Text_Search.md)
 
-## TODO
-
-* Exercise 1 add text, explain more.
-* virer les champs suffix de l'exercice 3
-
-
 
