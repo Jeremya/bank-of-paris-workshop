@@ -46,4 +46,7 @@ cd bank-of-paris-workshop
 
 [03.03 — Recherches sur du texte](exercises/03.03.Text_Search.md)
 
+### Exercice 4 - Spring boot application
+[04.01 — Quick start](exercises/04.01.start_app.md)
+
 

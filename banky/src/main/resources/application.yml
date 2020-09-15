@@ -1,0 +1,17 @@
+server.port: 8081
+
+spring.data.cassandra:
+  keyspace-name: comptes
+  username: jeremy
+  password: jeremy
+  # Create the schema on the fly if it doesn't exist
+  schema-action: CREATE_IF_NOT_EXISTS
+  # Increase timeouts when connecting to Astra from a dev workstation
+  request:
+    timeout: 10s
+  connection:
+    connect-timeout: 10s
+    init-query-timeout: 10s
+
+datastax.astra:
+  secure-connect-bundle: secure-connect-bank-of-paris.zip
