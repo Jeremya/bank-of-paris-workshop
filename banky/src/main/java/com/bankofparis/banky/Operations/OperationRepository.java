@@ -8,5 +8,4 @@ import java.util.List;
 @Repository
 public interface OperationRepository extends CassandraRepository<Operation, OperationPrimaryKey> {
     List<Operation> findByIban(String iban);
-
 }

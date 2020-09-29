@@ -2,8 +2,21 @@ server.port: 8081
 
 spring.data.cassandra:
   keyspace-name: comptes
-  username: jeremy
-  password: jeremy
+
+  ### Uncomment the part you need and comment others ###
+
+  # remote database
+  #contact-points: 10.101.32.26
+  contact-points: dse # docker container name
+  local-datacenter: dc1
+  port: 9042
+  # end of remote database
+
+  # DataStax Astra database
+  # username: jeremy
+  # password: jeremy
+  # end of DataStax Astra database
+
   # Create the schema on the fly if it doesn't exist
   schema-action: CREATE_IF_NOT_EXISTS
   # Increase timeouts when connecting to Astra from a dev workstation
@@ -13,5 +26,8 @@ spring.data.cassandra:
     connect-timeout: 10s
     init-query-timeout: 10s
 
+  # comment faire avec docker compose/astra/endpoint distant
+
+# for Astra
 datastax.astra:
   secure-connect-bundle: secure-connect-bank-of-paris.zip

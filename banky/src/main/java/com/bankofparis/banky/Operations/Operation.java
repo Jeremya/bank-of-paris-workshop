@@ -14,7 +14,7 @@ import java.util.UUID;
 @Data
 @Table("operations_by_iban")
 public class Operation {
-    @PrimaryKeyColumn(type = PrimaryKeyType.PARTITIONED)
+    @PrimaryKeyColumn(name = "iban", type = PrimaryKeyType.PARTITIONED)
     private String iban;
 
     @Column("operation_id")
