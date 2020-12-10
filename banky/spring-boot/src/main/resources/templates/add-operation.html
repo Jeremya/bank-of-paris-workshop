@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ajout d'une opération bancaire</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <form th:action="@{/operation/add}" th:object="${operation}" method="post">
+                <label for="iban">IBAN</label>
+                <input type="text" th:field="*{iban}" placeholder="IBAN">
+
+                <label for="label">Libellé</label>
+                <input type="text" th:field="*{label}" placeholder="exemple de libellé">
+
+                <label for="amount">Montant</label>
+                <input type="text" th:field="*{amount}" placeholder="en euros">
+
+                <button id="add-operation" class="btn btn-primary" type="submit">Ajouter</button>
+            </form>
+        </div>
+
+    </body>
+</html>

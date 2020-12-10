@@ -1,0 +1,10 @@
+server.port: 8081
+
+# Specify here if you will use Astra or not
+#   if using astra please use application-astra.conf file
+#   if not using astra, please use application-local.conf file
+datastax.useAstra: false
+
+management.endpoint.enabled-by-default: true # enable endpoint /actuator/health
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+    <meta charset="UTF-8">
+    <title>Liste des opérations</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h1> Operations de Bank of Paris </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th> IBAN </th>
+                        <th> Date Opération </th>
+                        <th> Label </th>
+                        <th> Montant </th>
+                        <th> Nom </th>
+                        <th> Prénom </th>
+                        <th> Ville </th>
+                        <th> Pays </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="operation : ${operations}">
+                        <td><span th:text="${operation.iban}"> Title </span></td>
+                        <td><span th:text="${operation.date_operation}"> Date </span></td>
+                        <td><span th:text="${operation.label}"> Label </span></td>
+                        <td><span th:text="${operation.amount}"> Label </span></td>
+                        <td><span th:text="${operation.firstname}"> Nom </span></td>
+                        <td><span th:text="${operation.lastname}"> Prénom </span></td>
+                        <td><span th:text="${operation.city}"> Ville </span></td>
+                        <td><span th:text="${operation.country}"> Pays </span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
